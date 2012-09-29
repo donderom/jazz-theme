@@ -107,7 +107,7 @@
    `(fringe ((,class (:foreground "#303030" :background ,jazz-bg))))
    `(header-line ((,class (:foreground ,jazz-yellow
                                        :background ,jazz-bg-1
-                                       :box (:line-width 5 :color ,jazz-bg :style released-button)))))
+                                       :box (:line-width -1 :color ,jazz-bg :style released-button)))))
    `(highlight ((,class (:background ,jazz-bg+1))))
 
    ;;; compilation
