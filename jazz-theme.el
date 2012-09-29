@@ -337,8 +337,8 @@
    `(hl-line-face ((,class (:background ,jazz-bg-1))))
 
    ;; ido-mode
-   `(ido-first-match ((,class (:foreground ,jazz-yellow))))
-   `(ido-only-match ((,class (:foreground ,jazz-orange))))
+   `(ido-first-match ((,class (:foreground ,jazz-yellow :weight normal))))
+   `(ido-only-match ((,class (:foreground ,jazz-orange :weight normal))))
    `(ido-subdir ((,class (:foreground ,jazz-red))))
 
    ;; js2-mode
