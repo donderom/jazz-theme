@@ -26,8 +26,8 @@ The Jazz theme can also be installed with [el-get](https://github.com/dimitri/el
        :description "A warm dark color theme for Emacs 24"
        :type github
        :pkgname "donderom/jazz-theme"
-       :prepare (progn
-                  (add-to-list 'custom-theme-load-path default-directory)))
+       :minimum-emacs-version 24
+       :prepare (add-to-list 'custom-theme-load-path default-directory))
 ```
 
 To load it automatically on Emacs startup add this to your init file:
