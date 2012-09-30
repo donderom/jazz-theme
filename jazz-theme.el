@@ -227,8 +227,8 @@
    `(eshell-ls-symlink ((,class (:foreground ,jazz-cyan :weight bold))))
 
    ;; flymake
-   `(flymake-errline ((,class (:foreground ,jazz-red-1 :weight bold :underline t))))
-   `(flymake-warnline ((,class (:foreground ,jazz-yellow-1 :weight bold :underline t))))
+   `(flymake-errline ((,class (:foreground ,jazz-fg :background ,jazz-red :weight bold :underline t))))
+   `(flymake-warnline ((,class (:foreground ,jazz-yellow-1 :background ,jazz-bg :weight bold :underline t))))
 
    ;; flyspell
    `(flyspell-duplicate ((,class (:foreground ,jazz-yellow-1 :weight bold :underline t))))
