@@ -566,6 +566,10 @@
    `(ensime-errline-highlight ((,class (:background ,jazz-red :foreground ,jazz-fg))))
    `(ensime-warnline ((,class (:background ,jazz-bg+1))))
    
+   ;; coffee-mode
+   `(coffee-mode-function-param ((,class (:foreground ,jazz-blue+1))))
+   `(coffee-mode-class-name ((,class (:foreground ,jazz-blue))))
+   
    ;; which-func-mode
    `(which-func ((,class (:foreground ,jazz-green+4)))))
 
