@@ -495,6 +495,22 @@
    `(rainbow-delimiters-depth-11-face ((,class (:foreground ,jazz-blue+1))))
    `(rainbow-delimiters-depth-12-face ((,class (:foreground ,jazz-red-4))))
 
+   ;; rcirc
+   `(rcirc-my-nick ((,class (:foreground ,jazz-blue))))
+   `(rcirc-other-nick ((,class (:foreground ,jazz-orange))))
+   `(rcirc-bright-nick ((,class (:foreground ,jazz-blue+1))))
+   `(rcirc-dim-nick ((,class (:foreground ,jazz-blue-2))))
+   `(rcirc-server ((,class (:foreground ,jazz-green))))
+   `(rcirc-server-prefix ((,class (:foreground ,jazz-green+1))))
+   `(rcirc-timestamp ((,class (:foreground ,jazz-green+2))))
+   `(rcirc-nick-in-message ((,class (:foreground ,jazz-yellow))))
+   `(rcirc-nick-in-message-full-line ((,class (:bold t))))
+   `(rcirc-prompt ((,class (:foreground ,jazz-yellow :bold t))))
+   `(rcirc-track-nick ((,class (:inverse-video t))))
+   `(rcirc-track-keyword ((,class (:bold t))))
+   `(rcirc-url ((,class (:bold t))))
+   `(rcirc-keyword ((,class (:foreground ,jazz-yellow :bold t))))
+
    ;; rpm-mode
    `(rpm-spec-dir-face ((,class (:foreground ,jazz-green))))
    `(rpm-spec-doc-face ((,class (:foreground ,jazz-green))))
