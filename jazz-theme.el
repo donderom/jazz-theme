@@ -537,6 +537,13 @@
    ;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,jazz-red))))
 
+   ;; undo-tree
+   `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,jazz-red))))
+   `(undo-tree-visualizer-current-face ((,class (:foreground ,jazz-green :weight bold))))
+   `(undo-tree-visualizer-default-face ((,class (:foreground ,jazz-fg))))
+   `(undo-tree-visualizer-register-face ((,class (:foreground ,jazz-yellow))))
+   `(undo-tree-visualizer-unmodified-face ((,class (:foreground, jazz-fg))))
+
    ;; whitespace-mode
    `(whitespace-space ((,class (:background ,jazz-bg :foreground ,jazz-bg+1))))
    `(whitespace-hspace ((,class (:background ,jazz-bg :foreground ,jazz-bg+1))))
