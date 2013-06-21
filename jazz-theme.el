@@ -229,14 +229,14 @@
    ;; flymake
    `(flymake-errline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,jazz-red+1)
+       (:underline (:style wave :color ,jazz-red)
                    :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,jazz-red+1 :weight bold :underline t))))
+      (t (:foreground ,jazz-red :weight bold :underline t))))
    `(flymake-warnline
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,jazz-orange)
+       (:underline (:style wave :color ,jazz-yellow)
                    :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,jazz-orange :weight bold :underline t))))
+      (t (:foreground ,jazz-yellow :weight bold :underline t))))
    `(flymake-infoline
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,jazz-blue)
@@ -246,12 +246,12 @@
    ;; flyspell
    `(flyspell-duplicate
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,jazz-orange) :inherit unspecified))
-      (t (:foreground ,jazz-orange :weight bold :underline t))))
+       (:underline (:style wave :color ,jazz-yellow-1) :inherit unspecified))
+      (t (:foreground ,jazz-yellow-1 :weight bold :underline t))))
    `(flyspell-incorrect
      ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,jazz-red+1) :inherit unspecified))
-      (t (:foreground ,jazz-red+1 :weight bold :underline t))))
+       (:underline (:style wave :color ,jazz-red-1) :inherit unspecified))
+      (t (:foreground ,jazz-red-1 :weight bold :underline t))))
 
    ;; erc
    `(erc-action-face ((,class (:inherit erc-default-face))))
