@@ -102,7 +102,7 @@
 
    ;;; basic coloring
    `(default ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
-   `(cursor ((,class (:foreground ,jazz-fg))))
+   `(cursor ((,class (:foreground ,jazz-fg :background ,jazz-yellow))))
    `(escape-glyph-face ((,class (:foreground ,jazz-red))))
    `(fringe ((,class (:foreground "#303030" :background ,jazz-bg))))
    `(header-line ((,class (:foreground ,jazz-yellow
