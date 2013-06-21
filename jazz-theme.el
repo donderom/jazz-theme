@@ -388,6 +388,7 @@
    ;; magit
    `(magit-section-title ((,class (:foreground ,jazz-yellow :weight bold :box nil :background ,jazz-bg))))
    `(magit-branch ((,class (:foreground ,jazz-orange :weight bold :box nil :background ,jazz-bg))))
+   `(magit-item-highlight ((t (:background ,jazz-bg+1))))
 
    ;; markdown
    `(markdown-header-face ((,class (:inherit variable-pitch))))
