@@ -104,7 +104,7 @@
    `(default ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
    `(cursor ((,class (:foreground ,jazz-fg :background ,jazz-yellow))))
    `(escape-glyph-face ((,class (:foreground ,jazz-red))))
-   `(fringe ((,class (:foreground "#303030" :background ,jazz-bg))))
+   `(fringe ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg+1))))
    `(header-line ((,class (:foreground ,jazz-yellow
                                        :background ,jazz-bg-1
                                        :box (:line-width -1 :color ,jazz-bg :style released-button)))))
