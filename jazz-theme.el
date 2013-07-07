@@ -102,7 +102,7 @@
 
    ;;; basic coloring
    `(default ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
-   `(cursor ((,class (:foreground ,jazz-fg))))
+   `(cursor ((,class (:foreground ,jazz-fg :background ,jazz-fg))))
    `(escape-glyph-face ((,class (:foreground ,jazz-red))))
    `(fringe ((,class (:foreground "#303030" :background ,jazz-bg))))
    `(header-line ((,class (:foreground ,jazz-yellow
@@ -145,8 +145,8 @@
    `(mode-line-highlight ((,class (:inverse-video t))))
    `(mode-line-inactive
      ((,class (:inherit mode-line :foreground ,jazz-green-1
-                           :background ,jazz-bg-1
-                           :box (:line-width 5 :color ,jazz-bg-1)))))
+                        :background ,jazz-bg-1
+                        :box (:line-width 5 :color ,jazz-bg-1)))))
    `(mode-line-folder-face ((,class (:foreground ,jazz-bg+2))))
    `(mode-line-modified-face ((,class (:foreground ,jazz-red))))
    `(mode-line-ro-modified-face ((,class (:foreground ,jazz-blue))))
@@ -227,12 +227,45 @@
    `(eshell-ls-symlink ((,class (:foreground ,jazz-cyan :weight bold))))
 
    ;; flymake
-   `(flymake-errline ((,class (:foreground ,jazz-fg :background ,jazz-red :weight bold :underline t))))
-   `(flymake-warnline ((,class (:foreground ,jazz-yellow-1 :background ,jazz-bg :weight bold :underline t))))
+   `(flymake-errline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-red)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-red :weight bold :underline t))))
+   `(flymake-warnline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-orange)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-orange :weight bold :underline t))))
+   `(flymake-infoline
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-blue)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-blue :weight bold :underline t))))
 
    ;; flyspell
-   `(flyspell-duplicate ((,class (:foreground ,jazz-yellow-1 :weight bold :underline t))))
-   `(flyspell-incorrect ((,class (:foreground ,jazz-red-1 :weight bold :underline t))))
+   `(flyspell-duplicate
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-yellow-1) :inherit unspecified))
+      (t (:foreground ,jazz-yellow-1 :weight bold :underline t))))
+   `(flyspell-incorrect
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-red-1) :inherit unspecified))
+      (t (:foreground ,jazz-red-1 :weight bold :underline t))))
+
+   ;; flycheck
+   `(flycheck-error
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-red)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-red :weight bold :underline t))))
+   `(flycheck-fringe-error ((,class (:foreground ,jazz-red :background ,jazz-bg))))
+   `(flycheck-warning
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-orange)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-orange :weight bold :underline t))))
+   `(flycheck-fringe-warning ((,class (:foreground ,jazz-orange :background ,jazz-bg))))
 
    ;; erc
    `(erc-action-face ((,class (:inherit erc-default-face))))
@@ -369,6 +402,7 @@
    ;; magit
    `(magit-section-title ((,class (:foreground ,jazz-yellow :weight bold :box nil :background ,jazz-bg))))
    `(magit-branch ((,class (:foreground ,jazz-orange :weight bold :box nil :background ,jazz-bg))))
+   `(magit-item-highlight ((t (:background ,jazz-bg+1))))
 
    ;; markdown
    `(markdown-header-face ((,class (:inherit variable-pitch))))
@@ -444,7 +478,7 @@
      ((,class (:inherit font-lock-comment-face))))
    `(org-archived ((,class (:foreground ,jazz-fg :weight bold))))
    `(org-checkbox ((,class (:background ,jazz-bg+2 :foreground "white"
-                                   :box (:line-width 1 :style released-button)))))
+                                        :box (:line-width 1 :style released-button)))))
    `(org-date ((,class (:foreground ,jazz-blue :underline t))))
    `(org-deadline-announce ((,class (:foreground ,jazz-red-1))))
    `(org-done ((,class (:bold t :weight bold :foreground ,jazz-green+3))))
@@ -577,7 +611,7 @@
    `(wl-highlight-message-unimportant-header-contents ((,class (:foreground ,jazz-fg))))
    `(wl-highlight-summary-answered-face ((,class (:foreground ,jazz-blue))))
    `(wl-highlight-summary-disposed-face ((,class (:foreground ,jazz-fg
-                                                         :slant italic))))
+                                                              :slant italic))))
    `(wl-highlight-summary-new-face ((,class (:foreground ,jazz-blue))))
    `(wl-highlight-summary-normal-face ((,class (:foreground ,jazz-fg))))
    `(wl-highlight-summary-thread-top-face ((,class (:foreground ,jazz-yellow))))
@@ -600,7 +634,7 @@
   (custom-theme-set-variables
    'jazz
    `(ansi-color-names-vector [,jazz-bg ,jazz-red ,jazz-green ,jazz-yellow
-                                          ,jazz-blue ,jazz-magenta ,jazz-cyan ,jazz-fg])
+                                       ,jazz-blue ,jazz-magenta ,jazz-cyan ,jazz-fg])
 
    ;; fill-column-indicator
    `(fci-rule-color ,jazz-bg-05)))
