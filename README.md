@@ -38,7 +38,7 @@ To load it automatically on Emacs startup add this to your init file:
 
 # Screenshot
 
-![Jazz theme with some Ruby](https://github.com/donderom/jazz-theme/raw/master/screenshot.png)
+![Jazz theme with some Ruby](http://f.cl.ly/items/3O3v0h2m0r1W2U0a3g0z/screenshot.png)
 
 # Contribution
 
