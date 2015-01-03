@@ -642,8 +642,4 @@
 
 (provide-theme 'jazz)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
 ;;; jazz-theme.el ends here.
