@@ -1,6 +1,6 @@
 ;;; jazz-theme.el --- A warm color theme for Emacs 24.
 
-;; Copyright (C) 2012 Roman Parykin, Bozhidar Batsov
+;; Copyright (C) 2012-2014 Roman Parykin, Bozhidar Batsov
 
 ;; Author: Roman Parykin <donderom@ymail.com>
 ;; URL: https://github.com/donderom/jazz-theme
@@ -24,7 +24,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-;;; Installation:
+;;; Commentary:
 ;;
 ;;   Drop the theme in a folder that is on `custom-theme-load-path'
 ;; and enjoy
@@ -36,17 +36,13 @@
 ;;
 ;; Don't forget that the theme requires Emacs 24.
 ;;
-;;; Bugs
-;;
-;; None that I'm aware of.
-;;
 ;;; Credits
 ;;
 ;; Jani Nurminen (zenburn theme for vim)
 ;; Bozhidar Batsov (zenburn theme port for Emacs),
 ;; Christian Brassat <crshd@mail.com> (jazz theme initial colors inspiration)
 ;;
-;;; Code
+;;; Code:
 (deftheme jazz "The Jazz color theme")
 
 (let ((class '((class color) (min-colors 89)))
