@@ -17,6 +17,13 @@ Now you can load the theme like this:
 
 `M-x load-theme RET jazz`
 
+## package.el
+
+jazz-theme is available in [MELPA](http://melpa.org) repository (instructions on adding the repo can be found [here](http://melpa.org/#/getting-started)).
+With MELPA repo added the theme can be installed by:
+
+`M-x package-install jazz-theme`
+
 ## el-get
 
 The Jazz theme can also be installed with [el-get](https://github.com/dimitri/el-get) with the following recipe:
@@ -29,6 +36,8 @@ The Jazz theme can also be installed with [el-get](https://github.com/dimitri/el
        :minimum-emacs-version 24
        :prepare (add-to-list 'custom-theme-load-path default-directory))
 ```
+
+## Auto load
 
 To load it automatically on Emacs startup add this to your init file:
 
