@@ -28,7 +28,11 @@ With MELPA repo added the theme can be installed by:
 
 ## el-get
 
-The Jazz theme can also be installed with [el-get](https://github.com/dimitri/el-get) with the following recipe:
+The Jazz theme can also be installed with [el-get](https://github.com/dimitri/el-get) (the package is available via MELPA):
+
+`M-x el-get-install RET jazz-theme RET`
+
+The el-get recipe for the theme (if needed) would be the following though:
 
 ```lisp
 (:name jazz-theme
