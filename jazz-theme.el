@@ -189,6 +189,9 @@
    `(font-latex-sedate ((,class (:foreground ,jazz-yellow :weight bold ))))
    `(font-latex-title-4 ((,class (:inherit variable-pitch :weight bold))))
 
+   ;; popup
+   `(popup-summary-face ((,class (:background ,jazz-bg+3 :foreground "gray19"))))
+
    ;; auto-complete
    `(ac-candidate-face ((,class (:background ,jazz-bg+3 :foreground "black"))))
    `(ac-selection-face ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg))))
