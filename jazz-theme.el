@@ -50,6 +50,7 @@
       ;; colors with +x are lighter, colors with -x are darker
       (jazz-fg       "#c6a57b")
       (jazz-fg-1     "#c6a57b")
+      (jazz-fg+1     "#303030")
 
       (jazz-bg-1     "#101010")
       (jazz-bg-05    "#151515")
@@ -100,7 +101,7 @@
    `(default ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
    `(cursor ((,class (:foreground ,jazz-fg :background ,jazz-fg))))
    `(escape-glyph-face ((,class (:foreground ,jazz-red))))
-   `(fringe ((,class (:foreground "#303030" :background ,jazz-bg))))
+   `(fringe ((,class (:foreground ,jazz-fg+1 :background ,jazz-bg))))
    `(header-line ((,class (:foreground ,jazz-yellow
                                        :background ,jazz-bg-1
                                        :box (:line-width -1 :color ,jazz-bg :style released-button)))))
@@ -188,6 +189,9 @@
    `(font-latex-warning ((,class (:inherit font-lock-warning))))
    `(font-latex-sedate ((,class (:foreground ,jazz-yellow :weight bold ))))
    `(font-latex-title-4 ((,class (:inherit variable-pitch :weight bold))))
+
+   ;; popup
+   `(popup-summary-face ((,class (:background ,jazz-bg+3 :foreground ,jazz-fg+1))))
 
    ;; auto-complete
    `(ac-candidate-face ((,class (:background ,jazz-bg+3 :foreground "black"))))
