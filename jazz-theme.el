@@ -192,6 +192,10 @@
 
    ;; popup
    `(popup-summary-face ((,class (:background ,jazz-bg+3 :foreground ,jazz-fg+1))))
+   `(popup-scroll-bar-foreground-face ((,class (:background ,jazz-bg+3))))
+   `(popup-scroll-bar-background-face ((,class (:background ,jazz-fg+1))))
+   `(popup-menu-mouse-face ((,class (:background ,jazz-yellow+1 :foreground ,jazz-bg))))
+   `(popup-tip-face ((,class (:background ,jazz-bg+3 :foreground ,jazz-bg))))
 
    ;; auto-complete
    `(ac-candidate-face ((,class (:background ,jazz-bg+3 :foreground "black"))))
