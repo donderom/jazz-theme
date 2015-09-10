@@ -134,7 +134,10 @@
 
    `(menu ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
    `(minibuffer-prompt ((,class (:foreground ,jazz-blue))))
-   `(mode-line ((,class (:foreground ,jazz-fg :background ,jazz-bg+1))))
+   `(mode-line
+     ((,class (:foreground ,jazz-fg
+                           :background ,jazz-bg+1
+                           :box (:line-width 5 :color ,jazz-bg+1)))))
    `(mode-line-buffer-id ((,class (:foreground ,jazz-yellow :weight bold))))
    `(mode-line-highlight ((,class (:inverse-video t))))
    `(mode-line-inactive
