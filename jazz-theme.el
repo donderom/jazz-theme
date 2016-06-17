@@ -575,6 +575,17 @@
    ;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,jazz-red))))
 
+   ;; term
+   `(term ((,class (:foreground ,jazz-fg))))
+   `(term-color-black ((,class (:foreground ,jazz-bg))))
+   `(term-color-blue ((,class (:foreground ,jazz-blue))))
+   `(term-color-cyan ((,class (:foreground ,jazz-cyan))))
+   `(term-color-green ((,class (:foreground ,jazz-green))))
+   `(term-color-magenta ((,class (:foreground ,jazz-magenta))))
+   `(term-color-red ((,class (:foreground ,jazz-red))))
+   `(term-color-white ((,class (:foreground ,jazz-fg))))
+   `(term-color-yellow ((,class (:foreground ,jazz-yellow))))
+
    ;; undo-tree
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,jazz-blue))))
    `(undo-tree-visualizer-current-face ((,class (:foreground ,jazz-red :weight bold))))
