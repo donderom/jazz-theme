@@ -178,6 +178,10 @@
 
    ;;; external
 
+   ;; anzu
+   `(anzu-mode-line ((,class (:foreground ,jazz-orange :weigth bold))))
+   `(anzu-replace-to ((,class :foreground ,jazz-orange)))
+
    ;; full-ack
    `(ack-separator ((,class (:foreground ,jazz-fg))))
    `(ack-file ((,class (:foreground ,jazz-blue))))
