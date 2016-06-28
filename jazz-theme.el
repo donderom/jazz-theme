@@ -209,6 +209,18 @@
    `(popup-scroll-bar-background-face ((,class (:background ,jazz-bg-1))))
    `(popup-isearch-match ((,class (:background ,jazz-bg :foreground ,jazz-fg))))
 
+   ;; company
+   `(company-tooltip ((,class (:background ,jazz-bg+3 :foreground ,jazz-bg))))
+   `(company-tooltip-common ((,class (:foreground ,jazz-bg :underline t))))
+   `(company-tooltip-common-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg :underline t))))
+   `(company-tooltip-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg))))
+   `(company-preview ((,class (:background ,jazz-blue :foreground ,jazz-fg))))
+   `(company-preview-common ((,class (:inherit company-preview))))
+   `(company-preview-search ((,class (:inherit company-preview :background ,jazz-blue+1))))
+   `(company-scrollbar-fg ((,class (:background ,jazz-bg+1))))
+   `(company-scrollbar-bg ((,class (:background ,jazz-bg+2))))
+   `(company-tooltip-annotation ((,class (:background nil :foreground ,jazz-yellow))))
+
    ;; diff
    `(diff-added ((,class (:foreground ,jazz-green+4))))
    `(diff-changed ((,class (:foreground ,jazz-yellow))))
