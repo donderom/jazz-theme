@@ -178,6 +178,10 @@
 
    ;;; external
 
+   ;; ace-jump
+   `(ace-jump-face-background ((,class (:foreground ,jazz-bg+2))))
+   `(ace-jump-face-foreground ((,class (:foreground ,jazz-yellow+1 :underline nil))))
+
    ;; anzu
    `(anzu-mode-line ((,class (:foreground ,jazz-orange :weigth bold))))
    `(anzu-replace-to ((,class :foreground ,jazz-orange)))
