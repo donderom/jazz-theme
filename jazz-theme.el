@@ -1,4 +1,4 @@
-;;; jazz-theme.el --- A warm color theme for Emacs 24.
+;;; jazz-theme.el --- A warm color theme for Emacs 24+.
 
 ;; Copyright (C) 2012-2014 Roman Parykin, Bozhidar Batsov
 
@@ -34,7 +34,9 @@
 ;; (load-file "path/to/jazz-theme.el")
 ;; (load-theme 'jazz t)
 ;;
-;; Don't forget that the theme requires Emacs 24.
+;; Don't forget that the theme requires Emacs 24+.
+;;
+;; The more information on the project page at https://github.com/donderom/jazz-theme
 ;;
 ;;; Credits
 ;;
