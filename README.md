@@ -1,9 +1,9 @@
 [![MELPA](http://melpa.org/packages/jazz-theme-badge.svg)](http://melpa.org/#/jazz-theme)
 
-# Jazz theme for Emacs 24
+# Jazz theme for Emacs 24+
 
-Jazz is a warm dark color theme for Emacs 24 inspired by [zenburn](https://github.com/bbatsov/zenburn-emacs) color theme.
-The theme uses Emacs 24 theming support and is tested only with GUI version of Emacs.
+Jazz is a warm dark color theme for Emacs 24+ inspired by [zenburn](https://github.com/bbatsov/zenburn-emacs) color theme.
+The theme uses Emacs 24+ theming support and is tested only with GUI version of Emacs.
 
 # Installation
 
@@ -36,7 +36,7 @@ The el-get recipe for the theme (if needed) would be the following though:
 
 ```lisp
 (:name jazz-theme
-       :description "A warm dark color theme for Emacs 24"
+       :description "A warm dark color theme for Emacs 24+"
        :type github
        :pkgname "donderom/jazz-theme"
        :minimum-emacs-version 24
