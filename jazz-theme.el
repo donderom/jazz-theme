@@ -233,6 +233,9 @@
    `(diff-file-header
      ((,class (:background ,jazz-bg+2 :foreground ,jazz-fg :bold t))))
 
+   ;; ein
+   `(ein:cell-input-area ((,class (:background ,jazz-bg+1))))
+
    ;; ert
    `(ert-test-result-expected ((,class (:foreground ,jazz-green+4 :background ,jazz-bg))))
    `(ert-test-result-unexpected ((,class (:foreground ,jazz-red :background ,jazz-bg))))
