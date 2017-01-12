@@ -593,6 +593,11 @@
    `(rst-level-5-face ((,class (:foreground ,jazz-cyan))))
    `(rst-level-6-face ((,class (:foreground ,jazz-green-1))))
 
+   ;; sbt-mode
+   `(sbt:error ((,class (:foreground ,jazz-red))))
+   `(sbt:info ((,class (:foreground ,jazz-green))))
+   `(sbt:warning ((,class (:foreground ,jazz-orange))))
+
    ;; show-paren
    `(show-paren-mismatch ((,class (:foreground ,jazz-red-3 :background ,jazz-bg :weight bold))))
    `(show-paren-match ((,class (:foreground ,jazz-blue-1 :background ,jazz-bg :weight bold))))
