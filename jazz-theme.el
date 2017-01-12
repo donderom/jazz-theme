@@ -112,15 +112,17 @@
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,jazz-yellow))))
    `(compilation-enter-directory-face ((,class (:foreground ,jazz-green))))
-   `(compilation-error-face ((,class (:foreground ,jazz-red-1 :weight bold :underline t))))
+   `(compilation-error-face ((,class (:foreground ,jazz-red :weight bold :underline t))))
+   `(compilation-error ((,class (:foreground ,jazz-red :weight bold :underline t))))
    `(compilation-face ((,class (:foreground ,jazz-fg))))
    `(compilation-info-face ((,class (:foreground ,jazz-blue))))
-   `(compilation-info ((,class (:foreground ,jazz-green+4 :underline t))))
+   `(compilation-info ((,class (:foreground ,jazz-blue))))
    `(compilation-leave-directory-face ((,class (:foreground ,jazz-green))))
    `(compilation-line-face ((,class (:foreground ,jazz-yellow))))
    `(compilation-line-number ((,class (:foreground ,jazz-yellow))))
    `(compilation-message-face ((,class (:foreground ,jazz-blue))))
-   `(compilation-warning-face ((,class (:foreground ,jazz-yellow-1 :weight bold :underline t))))
+   `(compilation-warning-face ((,class (:foreground ,jazz-orange :weight bold :underline t))))
+   `(compilation-warning ((,class (:foreground ,jazz-orange :weight bold :underline t))))
 
    ;;; grep
    `(grep-context-face ((,class (:foreground ,jazz-fg))))
