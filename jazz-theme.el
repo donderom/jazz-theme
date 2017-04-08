@@ -494,7 +494,7 @@
    `(minimap-semantic-variable-face ((,class (:inherit (font-lock-variable-name-face minimap-font-face) :background "gray10"))))
 
    ;; mic-paren
-   `(paren-face-match ((,class (:foreground ,jazz-cyan :background ,jazz-bg :weight bold))))
+   `(paren-face-match ((,class (:foreground ,jazz-cyan :background ,jazz-bg :weight bold :underline t))))
    `(paren-face-mismatch ((,class (:foreground ,jazz-bg :background ,jazz-magenta :weight bold))))
    `(paren-face-no-match ((,class (:foreground ,jazz-bg :background ,jazz-red :weight bold))))
 
@@ -606,7 +606,7 @@
 
    ;; show-paren
    `(show-paren-mismatch ((,class (:foreground ,jazz-red-3 :background ,jazz-bg :weight bold))))
-   `(show-paren-match ((,class (:foreground ,jazz-blue-1 :background ,jazz-bg :weight bold))))
+   `(show-paren-match ((,class (:foreground ,jazz-blue-1 :background ,jazz-bg :weight bold :underline t))))
 
    ;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,jazz-red))))
