@@ -95,11 +95,11 @@
       (jazz-magenta  "#7f355e"))
   (custom-theme-set-faces
    'jazz
+   ;;; Built-in
+   ;;; basic coloring
    '(button ((t (:underline t))))
    `(link ((,class (:foreground ,jazz-yellow :underline t :weight bold))))
    `(link-visited ((,class (:foreground ,jazz-yellow-2 :underline t :weight normal))))
-
-   ;;; basic coloring
    `(default ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
    `(cursor ((,class (:foreground ,jazz-fg :background ,jazz-fg))))
    `(escape-glyph-face ((,class (:foreground ,jazz-red))))
@@ -179,6 +179,10 @@
    `(font-lock-warning-face ((,class (:foreground ,jazz-yellow-1 :weight bold :underline t))))
 
    `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
+
+   ;; line-number-mode
+   `(line-number ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg-1))))
+   `(line-number-current-line ((,class (:foreground ,jazz-blue :background ,jazz-bg-1))))
 
    ;;; external
 
