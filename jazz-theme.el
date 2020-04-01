@@ -108,6 +108,9 @@
                                        :background ,jazz-bg-1
                                        :box (:line-width -1 :color ,jazz-bg :style released-button)))))
    `(highlight ((,class (:background ,jazz-bg+1))))
+   `(error ((,class (:foreground ,jazz-fg :background ,jazz-red))))
+   `(success ((,class (:foreground ,jazz-green))))
+   `(warning ((,class (:foreground ,jazz-orange))))
 
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,jazz-yellow))))
@@ -183,6 +186,31 @@
    ;; line-number-mode
    `(line-number ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg-1))))
    `(line-number-current-line ((,class (:foreground ,jazz-blue :background ,jazz-bg-1))))
+
+   ;;; Third-party (first level support)
+
+   ;; flycheck
+   `(flycheck-error
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-red)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-red :weight bold :underline t))))
+   `(flycheck-info
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-green)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-red :weight bold :underline t))))
+   `(flycheck-warning
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,jazz-orange)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,jazz-orange :weight bold :underline t))))
+   `(flycheck-fringe-error ((,class (:foreground ,jazz-red :background ,jazz-bg))))
+   `(flycheck-fringe-info ((,class (:foreground ,jazz-green :background ,jazz-bg))))
+   `(flycheck-fringe-warning ((,class (:foreground ,jazz-orange :background ,jazz-bg))))
+   `(flycheck-error-list-column-number ((,class (:foreground ,jazz-cyan :background ,jazz-bg))))
+   `(flycheck-error-list-line-number ((,class (:foreground ,jazz-cyan :background ,jazz-bg))))
+   `(flycheck-error-list-filename ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
 
    ;;; external
 
@@ -291,20 +319,6 @@
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,jazz-red-1) :inherit unspecified))
       (t (:foreground ,jazz-red-1 :weight bold :underline t))))
-
-   ;; flycheck
-   `(flycheck-error
-     ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,jazz-red)
-                   :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,jazz-red :weight bold :underline t))))
-   `(flycheck-fringe-error ((,class (:foreground ,jazz-red :background ,jazz-bg))))
-   `(flycheck-warning
-     ((((supports :underline (:style wave)))
-       (:underline (:style wave :color ,jazz-orange)
-                   :inherit unspecified :foreground unspecified :background unspecified))
-      (t (:foreground ,jazz-orange :weight bold :underline t))))
-   `(flycheck-fringe-warning ((,class (:foreground ,jazz-orange :background ,jazz-bg))))
 
    ;; erc
    `(erc-action-face ((,class (:inherit erc-default-face))))
