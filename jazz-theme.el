@@ -111,6 +111,7 @@
    `(error ((,class (:foreground ,jazz-fg :background ,jazz-red))))
    `(success ((,class (:foreground ,jazz-green))))
    `(warning ((,class (:foreground ,jazz-orange))))
+   `(shadow ((,class (:foreground ,jazz-cyan))))
 
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,jazz-yellow))))
@@ -226,6 +227,26 @@
    `(flycheck-error-list-line-number ((,class (:foreground ,jazz-cyan :background ,jazz-bg))))
    `(flycheck-error-list-filename ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
 
+   ;; lsp-mode
+   `(lsp-face-semhl-deprecated ((,class (:underline (:color ,jazz-yellow :style wave)))))
+
+   ;; lsp-ui
+   `(lsp-ui-doc-header ((,class (:foreground ,jazz-cyan :background ,jazz-bg+1))))
+   `(lsp-ui-peek-filename ((,class (:foreground ,jazz-blue))))
+   `(lsp-ui-peek-header ((,class (:foreground ,jazz-bg :background ,jazz-bg+3))))
+   `(lsp-ui-peek-highlight ((,class (:foreground ,jazz-bg+1
+                                                 :distant-foreground ,jazz-fg
+                                                 :background ,jazz-fg
+                                                 :box (:line-width -1 :color ,jazz-fg)))))
+   `(lsp-ui-peek-line-number ((,class (:foreground ,jazz-bg+2))))
+   `(lsp-ui-peek-list ((,class (:background ,jazz-bg+1))))
+   `(lsp-ui-peek-peek ((,class (:background ,jazz-bg+1))))
+   `(lsp-ui-peek-selection ((,class (:foreground ,jazz-bg+1 :background ,jazz-fg))))
+   `(lsp-ui-sideline-code-action ((,class (:foreground ,jazz-cyan :background ,jazz-fg))))
+   `(lsp-ui-sideline-current-symbol ((,class (:foreground ,jazz-fg :box (:line-width -1 :color ,jazz-fg)))))
+   `(lsp-ui-sideline-symbol ((,class (:foreground ,jazz-bg+3 :box (:line-width -1 :color ,jazz-bg+3)))))
+
+   ;; typit
    `(typit-correct-char ((,class (:foreground ,jazz-yellow))))
    `(typit-current-word ((,class (:background ,jazz-fg+1))))
    `(typit-statistic ((,class (:foreground ,jazz-blue))))
