@@ -52,7 +52,7 @@
       ;; colors with +x are lighter, colors with -x are darker
       (jazz-fg       "#c6a57b")
       (jazz-fg-1     "#c6a57b")
-      (jazz-fg+1     "#303030")
+      (jazz-fg+1     "#303030")  ;; TODO move it to bg family
 
       (jazz-bg-1     "#101010")
       (jazz-bg-05    "#151515")
@@ -189,6 +189,20 @@
 
    ;;; Third-party (first level support)
 
+   ;; company
+   `(company-echo-common ((,class (:foreground ,jazz-red))))
+   `(company-preview ((,class (:background ,jazz-blue :foreground ,jazz-fg))))
+   `(company-preview-common ((,class (:inherit company-preview))))
+   `(company-preview-search ((,class (:inherit company-preview :background ,jazz-blue+1))))
+   `(company-scrollbar-fg ((,class (:background ,jazz-bg+1))))
+   `(company-scrollbar-bg ((,class (:background ,jazz-bg+2))))
+   `(company-template-field ((,class (:background ,jazz-yellow :foreground ,jazz-bg))))
+   `(company-tooltip ((,class (:background ,jazz-bg+1 :foreground ,jazz-fg))))
+   `(company-tooltip-annotation ((,class (:background nil :foreground ,jazz-yellow))))
+   `(company-tooltip-common ((,class (:foreground ,jazz-bg+3 :underline t))))
+   `(company-tooltip-common-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg :underline t))))
+   `(company-tooltip-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg))))
+
    ;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
@@ -252,18 +266,6 @@
    ;; cheatsheet
    `(cheatsheet-group-face ((,class (:foreground ,jazz-blue))))
    `(cheatsheet-key-face ((,class (:foreground ,jazz-yellow))))
-
-   ;; company
-   `(company-tooltip ((,class (:background ,jazz-bg+3 :foreground ,jazz-bg))))
-   `(company-tooltip-common ((,class (:foreground ,jazz-bg :underline t))))
-   `(company-tooltip-common-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg :underline t))))
-   `(company-tooltip-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg))))
-   `(company-preview ((,class (:background ,jazz-blue :foreground ,jazz-fg))))
-   `(company-preview-common ((,class (:inherit company-preview))))
-   `(company-preview-search ((,class (:inherit company-preview :background ,jazz-blue+1))))
-   `(company-scrollbar-fg ((,class (:background ,jazz-bg+1))))
-   `(company-scrollbar-bg ((,class (:background ,jazz-bg+2))))
-   `(company-tooltip-annotation ((,class (:background nil :foreground ,jazz-yellow))))
 
    ;; diff
    `(diff-added ((,class (:foreground ,jazz-green+4))))
