@@ -226,6 +226,10 @@
    `(flycheck-error-list-line-number ((,class (:foreground ,jazz-cyan :background ,jazz-bg))))
    `(flycheck-error-list-filename ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
 
+   `(typit-correct-char ((,class (:foreground ,jazz-yellow))))
+   `(typit-current-word ((,class (:background ,jazz-fg+1))))
+   `(typit-statistic ((,class (:foreground ,jazz-blue))))
+
    ;;; external
 
    ;; ace-jump
