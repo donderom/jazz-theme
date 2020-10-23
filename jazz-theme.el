@@ -454,6 +454,9 @@
    `(ido-only-match ((,class (:foreground ,jazz-orange :weight normal))))
    `(ido-subdir ((,class (:foreground ,jazz-red))))
 
+   ;; iedit
+   `(iedit-occurrence ((,class (:foreground ,jazz-fg :background ,jazz-blue))))
+
    ;; js2-mode
    `(js2-warning-face ((,class (:underline ,jazz-orange))))
    `(js2-error-face ((,class (:foreground ,jazz-red :weight bold))))
