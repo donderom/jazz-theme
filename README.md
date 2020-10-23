@@ -7,17 +7,11 @@ The theme uses Emacs 24+ theming support and is tested only with GUI version of 
 
 # Installation
 
-## Manual
-
-Download `jazz-theme.el` to the directory `~/.emacs.d/themes/` and add this to your `.emacs` (or `.emacs.d/init.el` or whatever init file you use):
+## use-package
 
 ```lisp
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(use-package jazz-theme)
 ```
-
-Now you can load the theme like this:
-
-`M-x load-theme RET jazz`
 
 ## package.el
 
@@ -42,6 +36,18 @@ The el-get recipe for the theme (if needed) would be the following though:
        :minimum-emacs-version 24
        :prepare (add-to-list 'custom-theme-load-path default-directory))
 ```
+
+## Manual
+
+Download `jazz-theme.el` to the directory `~/.emacs.d/themes/` and add this to your `.emacs` (or `.emacs.d/init.el` or whatever init file you use):
+
+```lisp
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+```
+
+Now you can load the theme like this:
+
+`M-x load-theme RET jazz`
 
 ## Auto load
 
