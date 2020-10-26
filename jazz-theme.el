@@ -227,6 +227,17 @@
    `(flycheck-error-list-line-number ((,class (:foreground ,jazz-cyan :background ,jazz-bg))))
    `(flycheck-error-list-filename ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
 
+   ;; ivy-mode
+   `(ivy-confirm-face ((,class (:foreground ,jazz-green))))
+   `(ivy-current-match ((,class (:foreground ,jazz-bg :background ,jazz-fg))))
+   `(ivy-cursor ((,class (:foreground ,jazz-bg :background ,jazz-fg))))
+   `(ivy-match-required-face ((,class (:foreground ,jazz-red))))
+   `(ivy-minibuffer-match-face-1 ((,class (:foreground ,jazz-bg :background ,jazz-bg+3))))
+   `(ivy-minibuffer-match-face-2 ((,class (:foreground ,jazz-fg :background ,jazz-blue))))
+   `(ivy-minibuffer-match-face-3 ((,class (:foreground ,jazz-fg :background ,jazz-magenta))))
+   `(ivy-minibuffer-match-face-4 ((,class (:foreground ,jazz-fg :background ,jazz-bg+2))))
+   `(ivy-remote ((,class (:foreground ,jazz-magenta))))
+
    ;; lsp-mode
    `(lsp-face-semhl-deprecated ((,class (:underline (:color ,jazz-yellow :style wave)))))
 
