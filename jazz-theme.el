@@ -316,6 +316,11 @@
    `(diff-file-header
      ((,class (:background ,jazz-bg+2 :foreground ,jazz-fg :bold t))))
 
+   ;; diff-hl
+   `(diff-hl-insert ((,class (:foreground ,jazz-green))))
+   `(diff-hl-delete ((,class (:foreground ,jazz-red))))
+   `(diff-hl-change ((,class (:foreground ,jazz-blue))))
+
    ;; ein
    `(ein:cell-input-area ((,class (:background ,jazz-bg+1))))
 
