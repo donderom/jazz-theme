@@ -204,6 +204,10 @@
    `(company-tooltip-common-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg :underline t))))
    `(company-tooltip-selection ((,class (:background ,jazz-blue-4 :foreground ,jazz-fg))))
 
+   ;; dashboard
+   `(dashboard-items-face ((,class (:weight normal))))
+   `(dashboard-no-items-face ((,class (:weight normal))))
+
    ;; flycheck
    `(flycheck-error
      ((((supports :underline (:style wave)))
