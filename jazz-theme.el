@@ -152,14 +152,6 @@
      ((,class (:foreground ,jazz-bg+2
                         :background ,jazz-bg-1
                         :box (:line-width 5 :color ,jazz-bg-1)))))
-   `(mode-line-folder-face ((,class (:foreground ,jazz-bg+2))))
-   `(mode-line-modified-face ((,class (:foreground ,jazz-red))))
-   `(mode-line-ro-modified-face ((,class (:foreground ,jazz-blue))))
-   `(mode-line-buffer-name ((,class (:foreground ,jazz-yellow))))
-   `(mode-line-mode-name ((,class (:foreground ,jazz-blue))))
-   `(mode-line-mode-string ((,class (:foreground ,jazz-bg+3))))
-   `(mode-line-vc-mode ((,class (:foreground ,jazz-magenta))))
-   `(mode-line-minor-mode-face ((,class (:foreground ,jazz-bg+2 :height 96))))
 
    `(region ((,class (:background ,jazz-fg :foreground ,jazz-blue))))
    `(secondary-selection ((,class (:background ,jazz-bg+2))))
