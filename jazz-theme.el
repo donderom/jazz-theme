@@ -230,6 +230,7 @@
    `(flycheck-error-list-column-number ((,class (:foreground ,jazz-cyan :background ,jazz-bg))))
    `(flycheck-error-list-line-number ((,class (:foreground ,jazz-cyan :background ,jazz-bg))))
    `(flycheck-error-list-filename ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
+   `(flycheck-error-list-highlight ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
 
    ;; ivy-mode
    `(ivy-confirm-face ((,class (:foreground ,jazz-green))))
