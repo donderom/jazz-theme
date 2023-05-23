@@ -181,6 +181,52 @@
 
    ;;; Third-party (first level support)
 
+   ;; all-the-icons
+   ;; red
+   `(all-the-icons-red ((,class (:foreground ,jazz-red))))
+   `(all-the-icons-lred ((,class (:foreground ,jazz-red+1))))
+   `(all-the-icons-dred ((,class (:foreground ,jazz-red-1))))
+   `(all-the-icons-red-alt ((,class (:foreground ,jazz-red))))
+   ;; green
+   `(all-the-icons-green ((,class (:foreground ,jazz-green))))
+   `(all-the-icons-lgreen ((,class (:foreground ,jazz-green+1))))
+   `(all-the-icons-dgreen ((,class (:foreground ,jazz-green-1))))
+   ;; yellow
+   `(all-the-icons-yellow ((,class (:foreground ,jazz-yellow))))
+   `(all-the-icons-lyellow ((,class (:foreground ,jazz-yellow+1))))
+   `(all-the-icons-dyellow ((,class (:foreground ,jazz-yellow-1))))
+   ;; blue
+   `(all-the-icons-blue ((,class (:foreground ,jazz-blue))))
+   `(all-the-icons-blue-alt ((,class (:foreground ,jazz-blue))))
+   `(all-the-icons-lblue ((,class (:foreground ,jazz-blue+1))))
+   `(all-the-icons-dblue ((,class (:foreground ,jazz-blue-1))))
+   ;; maroon
+   `(all-the-icons-maroon ((,class (:foreground ,jazz-red-1))))
+   `(all-the-icons-lmaroon ((,class (:foreground ,jazz-red))))
+   `(all-the-icons-dmaroon ((,class (:foreground ,jazz-red-1))))
+   ;; purple
+   `(all-the-icons-purple ((,class (:foreground ,jazz-violet))))
+   `(all-the-icons-purple-alt ((,class (:foreground ,jazz-magenta))))
+   `(all-the-icons-lpurple ((,class (:foreground ,jazz-violet+1))))
+   `(all-the-icons-dpurple ((,class (:foreground ,jazz-violet-1))))
+   ;; orange
+   `(all-the-icons-orange ((,class (:foreground ,jazz-orange))))
+   `(all-the-icons-lorange ((,class (:foreground ,jazz-orange+1))))
+   `(all-the-icons-dorange ((,class (:foreground ,jazz-orange-1))))
+   ;; cyan
+   `(all-the-icons-cyan ((,class (:foreground ,jazz-cyan))))
+   `(all-the-icons-cyan-alt ((,class (:foreground ,jazz-cyan))))
+   `(all-the-icons-lcyan ((,class (:foreground ,jazz-cyan+1))))
+   `(all-the-icons-dcyan ((,class (:foreground ,jazz-cyan-1))))
+   ;; pink
+   `(all-the-icons-pink ((,class (:foreground ,jazz-magenta))))
+   `(all-the-icons-lpink ((,class (:foreground ,jazz-magenta+1))))
+   `(all-the-icons-dpink ((,class (:foreground ,jazz-magenta-1))))
+   ;; silver
+   `(all-the-icons-silver ((,class (:foreground ,jazz-bg+2))))
+   `(all-the-icons-lsilver ((,class (:foreground ,jazz-bg+3))))
+   `(all-the-icons-dsilver ((,class (:foreground ,jazz-bg+2))))
+
    ;; company
    `(company-echo-common ((,class (:foreground ,jazz-red))))
    `(company-preview ((,class (:background ,jazz-blue :foreground ,jazz-fg))))
