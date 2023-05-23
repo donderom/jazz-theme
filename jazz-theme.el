@@ -101,7 +101,10 @@
    `(link-visited ((,class (:foreground ,jazz-yellow-1 :underline t :weight normal))))
    `(default ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
    `(cursor ((,class (:foreground ,jazz-fg :background ,jazz-fg))))
-   `(escape-glyph-face ((,class (:foreground ,jazz-red))))
+   `(escape-glyph ((,class (:foreground ,jazz-fg :background ,jazz-red))))
+   `(escape-glyph-face ((,class (:foreground ,jazz-fg :background ,jazz-red))))
+   `(homoglyph ((,class (:foreground ,jazz-fg :background ,jazz-red))))
+   `(nobreak-hyphen ((,class (:foreground ,jazz-fg :background ,jazz-red))))
    `(fringe ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg))))
    `(header-line ((,class (:foreground ,jazz-yellow
                                        :background ,jazz-bg-1
