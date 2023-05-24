@@ -272,6 +272,13 @@
    `(flycheck-error-list-filename ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
    `(flycheck-error-list-highlight ((,class (:foreground ,jazz-fg :background ,jazz-bg))))
 
+   ;; hydra
+   `(hydra-face-red ((,class (:foreground ,jazz-red :bold t))))
+   `(hydra-face-blue ((,class (:foreground ,jazz-blue :bold t))))
+   `(hydra-face-amaranth ((,class (:foreground ,jazz-red+1 :bold t))))
+   `(hydra-face-pink ((,class (:foreground ,jazz-magenta+1 :bold t))))
+   `(hydra-face-teal ((,class (:foreground ,jazz-cyan+1 :bold t))))
+
    ;; ivy-mode
    `(ivy-confirm-face ((,class (:foreground ,jazz-green))))
    `(ivy-current-match ((,class (:foreground ,jazz-bg :background ,jazz-fg))))
@@ -736,6 +743,14 @@
    `(undo-tree-visualizer-default-face ((,class (:foreground ,jazz-fg))))
    `(undo-tree-visualizer-register-face ((,class (:foreground ,jazz-yellow))))
    `(undo-tree-visualizer-unmodified-face ((,class (:foreground, jazz-fg))))
+
+   ;; visual-regexp
+   `(vr/match-separator-face ((,class (:foreground ,jazz-red))))
+   `(vr/match-0 ((,class (:background ,jazz-cyan))))
+   `(vr/match-1 ((,class (:background ,jazz-blue))))
+   `(vr/group-0 ((,class (:background ,jazz-green-1))))
+   `(vr/group-1 ((,class (:background ,jazz-magenta))))
+   `(vr/group-2 ((,class (:background ,jazz-bg+2))))
 
    ;; whitespace-mode
    `(whitespace-space ((,class (:background ,jazz-bg :foreground ,jazz-bg+1))))
