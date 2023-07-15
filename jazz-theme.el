@@ -292,6 +292,7 @@
 
    ;; lsp-mode
    `(lsp-face-semhl-deprecated ((,class (:underline (:color ,jazz-yellow :style wave)))))
+   `(lsp-flycheck-info-unnecessary-face ((,class (:underline (:color ,jazz-yellow :style wave)))))
 
    ;; lsp-ui
    `(lsp-ui-doc-header ((,class (:foreground ,jazz-cyan :background ,jazz-bg+1))))
