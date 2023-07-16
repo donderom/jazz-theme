@@ -247,6 +247,7 @@
    ;; dashboard
    `(dashboard-items-face ((,class (:weight normal))))
    `(dashboard-no-items-face ((,class (:weight normal))))
+   `(dashboard-text-banner ((,class :inherit font-lock-builtin-face)))
 
    ;; flycheck
    `(flycheck-error
