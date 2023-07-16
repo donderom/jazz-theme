@@ -292,7 +292,27 @@
 
    ;; lsp-mode
    `(lsp-face-semhl-deprecated ((,class (:underline (:color ,jazz-yellow :style wave)))))
-   `(lsp-flycheck-info-unnecessary-face ((,class (:underline (:color ,jazz-yellow :style wave)))))
+   `(lsp-flycheck-info-unnecessary-face ((,class (:foreground ,jazz-bg+3
+                                                              :underline (:color ,jazz-green :style wave)))))
+   `(lsp-headerline-breadcrumb-deprecated-face ((,class (:foreground ,jazz-yellow :strike-through t))))
+   `(lsp-headerline-breadcrumb-path-face ((,class :inherit font-lock-keyword-face)))
+   `(lsp-headerline-breadcrumb-path-error-face ((,class (:inherit lsp-headerline-breadcrumb-path-face
+                                                                  :underline (:color ,jazz-red :style wave)))))
+   `(lsp-headerline-breadcrumb-path-hint-face ((,class (:inherit lsp-headerline-breadcrumb-path-face
+                                                                 :underline (:color ,jazz-green :style wave)))))
+   `(lsp-headerline-breadcrumb-path-info-face ((,class (:inherit lsp-headerline-breadcrumb-path-face
+                                                                 :underline (:color ,jazz-green :style wave)))))
+   `(lsp-headerline-breadcrumb-path-warning-face ((,class (:inherit lsp-headerline-breadcrumb-path-face
+                                                                    :underline (:color ,jazz-orange :style wave)))))
+   `(lsp-headerline-breadcrumb-symbols-face ((,class (:foreground ,jazz-violet))))
+   `(lsp-headerline-breadcrumb-symbols-error-face ((,class (:inherit lsp-headerline-breadcrumb-symbols-face
+                                                                     :underline (:color ,jazz-red :style wave)))))
+   `(lsp-headerline-breadcrumb-symbols-hint-face ((,class (:inherit lsp-headerline-breadcrumb-symbols-face
+                                                                    :underline (:color ,jazz-green :style wave)))))
+   `(lsp-headerline-breadcrumb-symbols-info-face ((,class (:inherit lsp-headerline-breadcrumb-symbols-face
+                                                                    :underline (:color ,jazz-green :style wave)))))
+   `(lsp-headerline-breadcrumb-symbols-warning-face ((,class (:inherit lsp-headerline-breadcrumb-symbols-face
+                                                                       :underline (:color ,jazz-orange :style wave)))))
 
    ;; lsp-ui
    `(lsp-ui-doc-header ((,class (:foreground ,jazz-cyan :background ,jazz-bg+1))))
