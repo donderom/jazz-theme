@@ -178,6 +178,9 @@
 
    `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
 
+   ;; help
+   `(help-key-binding ((,class (:foreground ,jazz-blue+1 :background ,jazz-bg :box nil))))
+
    ;; line-number-mode
    `(line-number ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg-1))))
    `(line-number-current-line ((,class (:foreground ,jazz-blue :background ,jazz-bg-1))))
@@ -818,11 +821,11 @@
    ;; ensime
    `(ensime-errline-highlight ((,class (:background ,jazz-red :foreground ,jazz-fg))))
    `(ensime-warnline ((,class (:background ,jazz-bg+1))))
-   
+
    ;; coffee-mode
    `(coffee-mode-function-param ((,class (:foreground ,jazz-blue+1))))
    `(coffee-mode-class-name ((,class (:foreground ,jazz-blue))))
-   
+
    ;; which-func-mode
    `(which-func ((,class (:foreground ,jazz-green+1)))))
 
