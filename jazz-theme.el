@@ -579,6 +579,12 @@
    `(magit-branch-current ((,class (:inherit magit-branch-local :box 1))))
    `(magit-branch-remote ((,class (:foreground ,jazz-green+1))))
    `(magit-branch-remote-head ((,class (:inherit magit-branch-remote :box 1))))
+   `(magit-diff-file-heading ((,class (:weight normal :extend t))))
+   `(magit-diff-file-heading-highlight ((,class (:inherit magit-section-highlight))))
+   `(magit-diff-file-heading-selection ((,class (:inherit region :extend t))))
+   `(magit-section-heading ((,class (:weight normal :foreground ,jazz-yellow :extend t))))
+   `(magit-section-highlight ((,class (:background ,jazz-bg+1 :extend t :weight normal))))
+   `(magit-section-heading-selection ((,class (:inherit region :extend t))))
 
    ;; markdown
    `(markdown-header-face ((,class (:inherit variable-pitch))))
