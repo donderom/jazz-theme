@@ -587,6 +587,8 @@
    `(magit-diff-hunk-heading ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg :extend t))))
    `(magit-diff-hunk-heading-highlight ((,class (:background ,jazz-bg+1 :extend t))))
    `(magit-diff-hunk-heading-selection ((,class (:inherit region :extend t))))
+   `(magit-diffstat-added ((,class (:foreground ,jazz-green))))
+   `(magit-diffstat-removed ((,class (:foreground ,jazz-red))))
    `(magit-section-heading ((,class (:weight normal :foreground ,jazz-yellow :extend t))))
    `(magit-section-highlight ((,class (:background ,jazz-bg+1 :extend t :weight normal))))
    `(magit-section-heading-selection ((,class (:inherit region :extend t))))
