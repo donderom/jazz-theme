@@ -594,6 +594,8 @@
    `(magit-log-author ((,class (:foreground ,jazz-blue))))
    `(magit-log-date ((,class (:foreground ,jazz-bg+3))))
    `(magit-log-graph ((,class (:foreground ,jazz-bg+3))))
+   `(magit-process-ng ((,class (:inherit magit-section-heading :foreground ,jazz-red))))
+   `(magit-process-ok ((,class (:inherit magit-section-heading :foreground ,jazz-green))))
    `(magit-reflog-amend ((,class (:foreground ,jazz-magenta))))
    `(magit-reflog-checkout ((,class (:foreground ,jazz-blue))))
    `(magit-reflog-cherry-pick ((,class (:foreground ,jazz-yellow))))
