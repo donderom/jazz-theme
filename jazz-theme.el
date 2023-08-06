@@ -579,6 +579,8 @@
    `(magit-branch-current ((,class (:inherit magit-branch-local :box 1))))
    `(magit-branch-remote ((,class (:foreground ,jazz-green+1))))
    `(magit-branch-remote-head ((,class (:inherit magit-branch-remote :box 1))))
+   `(magit-diff-context ((,class (:foreground ,jazz-fg :extend t))))
+   `(magit-diff-context-highlight ((,class (:inherit magit-diff-context :background ,jazz-bg+1))))
    `(magit-diff-file-heading ((,class (:weight normal :extend t))))
    `(magit-diff-file-heading-highlight ((,class (:inherit magit-section-highlight))))
    `(magit-diff-file-heading-selection ((,class (:inherit region :extend t))))
