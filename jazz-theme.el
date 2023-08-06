@@ -575,9 +575,10 @@
    `(linum ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg-1))))
 
    ;; magit
-   `(magit-section-title ((,class (:foreground ,jazz-yellow :weight bold :box nil :background ,jazz-bg))))
-   `(magit-branch ((,class (:foreground ,jazz-orange :weight bold :box nil :background ,jazz-bg))))
-   `(magit-item-highlight ((t (:background ,jazz-bg+1))))
+   `(magit-branch-local ((,class (:foreground ,jazz-blue+1))))
+   `(magit-branch-current ((,class (:inherit magit-branch-local :box 1))))
+   `(magit-branch-remote ((,class (:foreground ,jazz-green+1))))
+   `(magit-branch-remote-head ((,class (:inherit magit-branch-remote :box 1))))
 
    ;; markdown
    `(markdown-header-face ((,class (:inherit variable-pitch))))
