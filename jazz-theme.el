@@ -118,6 +118,10 @@
    `(warning ((,class (:foreground ,jazz-orange))))
    `(shadow ((,class (:foreground ,jazz-cyan))))
 
+   ;; bookmark
+   `(bookmark-face ((,class (:foreground ,jazz-orange))))
+   `(bookmark-menu-bookmark ((,class (:weight normal))))
+
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,jazz-yellow))))
    `(compilation-enter-directory-face ((,class (:foreground ,jazz-green))))
