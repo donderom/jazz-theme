@@ -50,47 +50,50 @@
 (let ((class '((class color) (min-colors 89)))
       ;; Jazz palette
       ;; colors with +x are lighter, colors with -x are darker
-      (jazz-fg        "#c6a57b")
+      (jazz-fg         "#c6a57b")
 
-      (jazz-bg+3      "#606060")
-      (jazz-bg+2      "#505050")
-      (jazz-bg+1      "#202020")
-      (jazz-bg        "#151515")
-      (jazz-bg-1      "#101010")
+      (jazz-bg+3       "#606060")
+      (jazz-bg+2       "#505050")
+      (jazz-bg+1       "#202020")
+      (jazz-bg         "#151515")
+      (jazz-bg-1       "#101010")
 
-      (jazz-bg-blue   "#272A36")
+      (jazz-bg-blue    "#272A36")
+      (jazz-bg-green   "#121c16")
+      (jazz-bg-green+1 "#253529")
+      (jazz-bg-red     "#3e2022")
 
-      (jazz-red+1     "#a43836")
-      (jazz-red       "#953331")
-      (jazz-red-1     "#862e2c")
+      (jazz-red+1      "#a43836")
+      (jazz-red        "#953331")
+      (jazz-red-1      "#862e2c")
 
-      (jazz-orange+1  "#c36a44")
-      (jazz-orange    "#ba5b34")
-      (jazz-orange-1  "#a54500")
+      (jazz-orange+1   "#c36a44")
+      (jazz-orange     "#ba5b34")
+      (jazz-orange-1   "#a54500")
 
-      (jazz-yellow+1  "#96a62d")
-      (jazz-yellow    "#909737")
-      (jazz-yellow-1  "#828932")
+      (jazz-yellow+1   "#96a62d")
+      (jazz-yellow     "#909737")
+      (jazz-yellow-1   "#828932")
 
-      (jazz-green+1   "#7e9960")
-      (jazz-green     "#5e7531")
-      (jazz-green-1   "#546a29")
+      (jazz-green+1    "#7e9960")
+      (jazz-green      "#5e7531")
+      (jazz-green-1    "#546a29")
 
-      (jazz-cyan+1    "#3a737c")
-      (jazz-cyan      "#34676f")
-      (jazz-cyan-1    "#2e5b62")
+      (jazz-cyan+1     "#3a737c")
+      (jazz-cyan       "#34676f")
+      (jazz-cyan-1     "#2e5b62")
 
-      (jazz-blue+1    "#5c737c")
-      (jazz-blue      "#385e6b")
-      (jazz-blue-1    "#31535e")
+      (jazz-blue+1     "#5c737c")
+      (jazz-blue       "#385e6b")
+      (jazz-blue-1     "#31535e")
 
-      (jazz-violet+1  "#6c6c8c")
-      (jazz-violet    "#5e5e7a")
-      (jazz-violet-1  "#515169")
+      (jazz-violet+1   "#6c6c8c")
+      (jazz-violet     "#5e5e7a")
+      (jazz-violet-1   "#515169")
 
-      (jazz-magenta+1 "#8d3b68")
-      (jazz-magenta   "#7f355e")
-      (jazz-magenta-1 "#712f54"))
+      (jazz-magenta+1  "#8d3b68")
+      (jazz-magenta    "#7f355e")
+      (jazz-magenta-1  "#712f54"))
 
   (custom-theme-set-faces
    'jazz
@@ -382,10 +385,12 @@
    ;; diff
    `(diff-added ((,class (:foreground ,jazz-green+1))))
    `(diff-changed ((,class (:foreground ,jazz-yellow))))
-   `(diff-removed ((,class (:foreground ,jazz-red))))
-   `(diff-header ((,class (:background ,jazz-bg+1))))
    `(diff-file-header
      ((,class (:background ,jazz-bg+2 :foreground ,jazz-fg :bold t))))
+   `(diff-header ((,class (:background ,jazz-bg+1))))
+   `(diff-removed ((,class (:foreground ,jazz-red))))
+   `(diff-refine-added ((,class (:background ,jazz-bg-green+1))))
+   `(diff-refine-removed ((,class (:background ,jazz-red-1))))
 
    ;; diff-hl
    `(diff-hl-insert ((,class (:foreground ,jazz-green))))
@@ -608,6 +613,15 @@
    `(magit-section-heading ((,class (:weight normal :foreground ,jazz-yellow :extend t))))
    `(magit-section-highlight ((,class (:background ,jazz-bg+1 :extend t :weight normal))))
    `(magit-section-heading-selection ((,class (:inherit region :extend t))))
+
+   `(magit-diff-added ((,class (:background ,jazz-bg-green :extend t))))
+   `(magit-diff-their ((,class (:background ,jazz-bg-green :extend t))))
+   `(magit-diff-our ((,class (:background ,jazz-bg-red :extend t))))
+   `(magit-diff-removed ((,class (:background ,jazz-bg-red :extend t))))
+   `(magit-diff-added-highlight ((,class (:background ,jazz-bg-green :extend t))))
+   `(magit-diff-their-highlight ((,class (:background ,jazz-bg-green :extend t))))
+   `(magit-diff-removed-highlight ((,class (:background ,jazz-bg-red :extend t))))
+   `(magit-diff-their-highlight ((,class (:background ,jazz-bg-red :extend t))))
 
    ;; markdown
    `(markdown-header-face ((,class (:inherit variable-pitch))))
