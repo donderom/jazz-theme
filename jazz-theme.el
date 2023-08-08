@@ -601,6 +601,7 @@
    `(magit-diff-hunk-heading ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg :extend t))))
    `(magit-diff-hunk-heading-highlight ((,class (:background ,jazz-bg+1 :extend t))))
    `(magit-diff-hunk-heading-selection ((,class (:inherit region :extend t))))
+   `(magit-diff-lines-heading ((,class (:foreground ,jazz-fg :background ,jazz-blue :extend t))))
    `(magit-diff-our ((,class (:background ,jazz-bg-red :extend t))))
    `(magit-diff-our-highlight ((,class (:background ,jazz-bg-red :extend t))))
    `(magit-diff-removed ((,class (:background ,jazz-bg-red :extend t))))
