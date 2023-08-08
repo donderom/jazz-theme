@@ -627,6 +627,7 @@
    `(magit-section-heading ((,class (:weight normal :foreground ,jazz-yellow :extend t))))
    `(magit-section-highlight ((,class (:background ,jazz-bg+1 :extend t :weight normal))))
    `(magit-section-heading-selection ((,class (:inherit region :extend t))))
+   `(magit-tag ((,class (:foreground ,jazz-orange+1))))
 
    ;; markdown
    `(markdown-header-face ((,class (:inherit variable-pitch))))
