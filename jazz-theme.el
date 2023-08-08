@@ -249,7 +249,7 @@
    `(company-scrollbar-bg ((,class (:background ,jazz-bg+2))))
    `(company-template-field ((,class (:background ,jazz-yellow :foreground ,jazz-bg))))
    `(company-tooltip ((,class (:background ,jazz-bg+1 :foreground ,jazz-fg))))
-   `(company-tooltip-annotation ((,class (:background nil :foreground ,jazz-yellow))))
+   `(company-tooltip-annotation ((,class (:background unspecified :foreground ,jazz-yellow))))
    `(company-tooltip-common ((,class (:foreground ,jazz-bg+3 :underline t))))
    `(company-tooltip-common-selection ((,class (:background ,jazz-blue-1 :foreground ,jazz-fg :underline t))))
    `(company-tooltip-selection ((,class (:background ,jazz-blue-1 :foreground ,jazz-fg))))
