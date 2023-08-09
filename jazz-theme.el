@@ -401,6 +401,10 @@
    `(diff-hl-delete ((,class (:foreground ,jazz-red))))
    `(diff-hl-change ((,class (:foreground ,jazz-blue))))
 
+   ;; dockerfile-mode
+   `(dockerfile-image-alias ((,class (:inherit font-lock-constant-face))))
+   `(dockerfile-image-name ((,class (:inherit font-lock-builtin-face))))
+
    ;; ein
    `(ein:cell-input-area ((,class (:background ,jazz-bg+1))))
 
