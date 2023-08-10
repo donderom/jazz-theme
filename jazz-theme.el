@@ -192,6 +192,27 @@
    `(line-number ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg-1))))
    `(line-number-current-line ((,class (:foreground ,jazz-blue :background ,jazz-bg-1))))
 
+   ;; vc
+   `(vc-annotate-face-3F3FFF ((,class (:foreground ,jazz-violet+1))))
+   `(vc-annotate-face-3F6CFF ((,class (:foreground ,jazz-magenta+1))))
+   `(vc-annotate-face-3F99FF ((,class (:foreground ,jazz-blue-1))))
+   `(vc-annotate-face-3FC6FF ((,class (:foreground ,jazz-blue))))
+   `(vc-annotate-face-3FF3FF ((,class (:foreground ,jazz-blue+1))))
+   `(vc-annotate-face-3FFF56 ((,class (:foreground ,jazz-green-1))))
+   `(vc-annotate-face-3FFF83 ((,class (:foreground ,jazz-cyan+1))))
+   `(vc-annotate-face-3FFFB0 ((,class (:foreground ,jazz-cyan))))
+   `(vc-annotate-face-3FFFDD ((,class (:foreground ,jazz-cyan-1))))
+   `(vc-annotate-face-56FF3F ((,class (:foreground ,jazz-green))))
+   `(vc-annotate-face-83FF3F ((,class (:foreground ,jazz-green+1))))
+   `(vc-annotate-face-B0FF3F ((,class (:foreground ,jazz-yellow-1))))
+   `(vc-annotate-face-DDFF3F ((,class (:foreground ,jazz-yellow))))
+   `(vc-annotate-face-F6FFCC ((,class (:foreground ,jazz-bg))))
+   `(vc-annotate-face-FF3F3F ((,class (:foreground ,jazz-red+1))))
+   `(vc-annotate-face-FF6C3F ((,class (:foreground ,jazz-orange-1))))
+   `(vc-annotate-face-FF993F ((,class (:foreground ,jazz-orange))))
+   `(vc-annotate-face-FFC63F ((,class (:foreground ,jazz-orange+1))))
+   `(vc-annotate-face-FFF33F ((,class (:foreground ,jazz-yellow+1))))
+
    ;;; Third-party (first level support)
 
    ;; all-the-icons
