@@ -122,6 +122,11 @@
    `(bookmark-face ((,class (:foreground ,jazz-orange))))
    `(bookmark-menu-bookmark ((,class (:weight normal))))
 
+   ;; change-log
+   `(change-log-date ((,class (:inherit font-lock-keyword-face))))
+   `(change-log-name ((,class (:inherit font-lock-builtin-face))))
+   `(change-log-email ((,class (:inherit default))))
+
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,jazz-yellow))))
    `(compilation-enter-directory-face ((,class (:foreground ,jazz-green))))
