@@ -118,6 +118,24 @@
    `(warning ((,class (:foreground ,jazz-orange))))
    `(shadow ((,class (:foreground ,jazz-cyan))))
 
+   ;;ansi-color
+   `(ansi-color-black ((,class (:foreground ,jazz-bg :background ,jazz-bg))))
+   `(ansi-color-blue ((,class (:foreground ,jazz-blue :background ,jazz-blue))))
+   `(ansi-color-bright-black ((,class (:foreground ,jazz-bg+2 :background ,jazz-bg+2))))
+   `(ansi-color-bright-blue ((,class (:foreground ,jazz-blue+1 :background ,jazz-blue+1))))
+   `(ansi-color-bright-cyan ((,class (:foreground ,jazz-cyan+1 :background ,jazz-cyan+1))))
+   `(ansi-color-bright-green ((,class (:foreground ,jazz-green+1 :background ,jazz-green+1))))
+   `(ansi-color-bright-magenta ((,class (:foreground ,jazz-magenta+1 :background ,jazz-magenta+1))))
+   `(ansi-color-bright-red ((,class (:foreground ,jazz-red+1 :background ,jazz-red+1))))
+   `(ansi-color-bright-white ((,class (:foreground ,jazz-fg :background ,jazz-fg))))
+   `(ansi-color-bright-yellow ((,class (:foreground ,jazz-yellow+1 :background ,jazz-yellow+1))))
+   `(ansi-color-cyan ((,class (:foreground ,jazz-cyan :background ,jazz-cyan))))
+   `(ansi-color-green ((,class (:foreground ,jazz-green :background ,jazz-green))))
+   `(ansi-color-magenta ((,class (:foreground ,jazz-magenta :background ,jazz-magenta))))
+   `(ansi-color-red ((,class (:foreground ,jazz-red :background ,jazz-red))))
+   `(ansi-color-white ((,class (:foreground ,jazz-fg :background ,jazz-fg))))
+   `(ansi-color-yellow ((,class (:foreground ,jazz-yellow :background ,jazz-yellow))))
+
    ;; bookmark
    `(bookmark-face ((,class (:foreground ,jazz-orange))))
    `(bookmark-menu-bookmark ((,class (:weight normal))))
